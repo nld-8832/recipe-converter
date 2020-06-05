@@ -7,7 +7,7 @@
 To install the package:
 
 ```bash
-pip install -e .
+pip install -e
 ```
 
 To run the web app:
