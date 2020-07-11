@@ -14,18 +14,17 @@ import glob
 import sys
 sys.path.append('/models/')
 import sklearn_crfsuite as crf
-<<<<<<< HEAD
+
 from app.parsing import tokenize, standardize, asfloat
 from app.evaluate import getlabels
 from app.training import removeiob, getfeatures
 from app.preprocess import get_image, resize, preprocess_mobile_image, sentences_segmentate, resize_sentences_for_model, preprocess_for_model
-=======
-#from parsing import tokenize, standardize, asfloat
-#from evaluate import getlabels
-#from training import removeiob, getfeatures
-#from preprocess import get_image, resize, preprocess_mobile_image, sentences_segmentate, resize_sentences_for_model, preprocess_for_model
->>>>>>> ca13e9ab2e05af8f0bf1035c69f8d2ab61cef92c
-
+'''
+from parsing import tokenize, standardize, asfloat
+from evaluate import getlabels
+from training import removeiob, getfeatures
+from preprocess import get_image, resize, preprocess_mobile_image, sentences_segmentate, resize_sentences_for_model, preprocess_for_model
+'''
 app = Flask(__name__)
 
 @app.route('/')
