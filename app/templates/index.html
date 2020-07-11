@@ -12,28 +12,26 @@
 </head>
 
 <body>
-    <form class="inputForm" enctype="multipart/form-data" action="/convert" method="post">
-        <h3 class="display-4">Take a photo</h3><br /><br /> 
+    <div class="container">
+        <div class="shadow-lg p-3 my-auto bg-white rounded flex-center w-60 h-60">
+            <form class="inputForm" enctype="multipart/form-data" action="/convert" method="POST">
+                <h3 class="display-4">Convert your recipe</h3><br /><br /> 
+        
+                <label class="btn btn-outline-dark">
+                    <i class="fa fa-image"></i>Choose File<input id="imageFile" type="file" accept="image/*" name="imageFile" style="display: none;">
+                </label>
+        
+                <div class="image-preview" id="imagePreview">
+                    <img id="imagePreviewImage" class="img-fluid" src="#" alt="IMAGE" style="border: 1px solid #ddd; border-radius: 4px; padding: 5px; width: 400px;"/>
+                </div>
+        
+                <input class="btn btn-outline-dark" type="submit" value="Upload" style="margin-top: 10px; margin-bottom: 20px;"></button>
+        
+                <p class="lead">Converted recipes</p>
+                <textarea class="form-input" id="output-recipe" onload="show_alert('{{text_detected}}')" placeholder="Converted recipe will appear here" style="width: 400px; height: 400px; ">{{text_detected}}</textarea>
 
-        <label class="btn btn-outline-dark">
-            <i class="fa fa-image"></i>Choose File<input id="imageFile" type="file" accept="image/*" name="imageFile" style="display: none;">
-        </label>
-
-        <div class="image-preview" id="imagePreview">
-            <img id="imagePreviewImage" class="img-fluid" src="#" alt="IMAGE"/>
+            </div>
         </div>
-
-        <input class="btn btn-outline-dark" type="submit" value="Upload" style="margin-top: 10px; margin-bottom: 20px;"></button>
-
-        <p class="lead">Parsed text</p>
-        <p class="result" onload="show_alert('{{text_detected}}')">
-            {{text_detected}}
-        </p> 
-
-        <p class="lead">Converted units</p>
-        <p class="result" onload="show_alert('{{text_detected}}')">
-            {{text_detected}}
-        </p> 
     </div>
 
     <script>
