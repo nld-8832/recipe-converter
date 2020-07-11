@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 from pathlib import Path
 from natsort import natsorted, ns
-import cv2
+from cv2 import cv2
 
 import numpy as np
 import io

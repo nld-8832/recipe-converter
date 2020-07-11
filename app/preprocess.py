@@ -1,5 +1,5 @@
 from skimage.filters import threshold_local
-import cv2
+from cv2 import cv2
 from PIL import Image
 from pathlib import Path
 from natsort import natsorted, ns
