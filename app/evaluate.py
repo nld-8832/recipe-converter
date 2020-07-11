@@ -1,6 +1,6 @@
 import pycrfsuite as crf
-from models.training import getfeatures
-from models.parsing import removeiob
+from training import getfeatures
+from parsing import removeiob
 
 def getlabels(ingredients:str, model_path):
     """
