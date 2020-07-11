@@ -14,10 +14,10 @@ import glob
 import sys
 sys.path.append('/models/')
 import sklearn_crfsuite as crf
-from models.parsing import tokenize, standardize, asfloat
-from models.evaluate import getlabels
-from models.training import removeiob, getfeatures
-from preprocess import get_image, resize, preprocess_mobile_image, sentences_segmentate, resize_sentences_for_model, preprocess_for_model
+from app.parsing import tokenize, standardize, asfloat
+from app.evaluate import getlabels
+from app.training import removeiob, getfeatures
+from app.preprocess import get_image, resize, preprocess_mobile_image, sentences_segmentate, resize_sentences_for_model, preprocess_for_model
 
 app = Flask(__name__)
 
