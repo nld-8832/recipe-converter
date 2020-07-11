@@ -4,7 +4,11 @@ import re
 import os.path
 import pycrfsuite as crf
 from itertools import chain
+<<<<<<< HEAD:app/training.py
 from app.parsing import symbols, tokenize, standardize, isquantity, isunit, asfloat, tokenmatch, round_2f, iobtag, removeiob
+=======
+#from parsing import symbols, tokenize, standardize, isquantity, isunit, asfloat, tokenmatch, round_2f, iobtag, removeiob
+>>>>>>> ca13e9ab2e05af8f0bf1035c69f8d2ab61cef92c:app/models/training.py
 
 """
 Parse a CSV where the row is formatted like NYT cooking dataset:
