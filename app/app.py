@@ -18,6 +18,7 @@ from models.parsing import tokenize, standardize, asfloat
 from models.evaluate import getlabels
 from models.training import removeiob, getfeatures
 from preprocess import get_image, resize, preprocess_mobile_image, sentences_segmentate, resize_sentences_for_model, preprocess_for_model
+
 app = Flask(__name__)
 
 @app.route('/')
